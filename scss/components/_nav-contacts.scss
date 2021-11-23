@@ -1,14 +1,18 @@
 .nav-contacts {
-  display: flex;
+  display: none;
 
-  list-style: none;
-  letter-spacing: 0.02em;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  @media screen and (min-width: 768px) {
+    display: flex;
+
+    list-style: none;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 
-.nav-contacts_left {
+.nav-contacts__left {
   margin-left: auto;
 }
 
