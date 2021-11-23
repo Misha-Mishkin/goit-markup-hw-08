@@ -1,5 +1,13 @@
 .header {
+  // position: relative;
   border-bottom: 1px solid #ececec;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
 }
 
 .header__section {
@@ -9,61 +17,24 @@
 }
 
 .header__nav {
-  display: none;
-
   @media screen and (min-width: 768px) {
     display: flex;
   }
 }
 
-.burger-btn {
+.header__burger-btn {
   background-color: transparent;
   cursor: pointer;
   padding: 0;
   line-height: 0;
   border: none;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
-.burger-btn__icon {
-  width: 40px;
-  height: 40px;
-}
-
-.mobile-menu {
-  position: fixed;
-  z-index: 999;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  padding: 48px 40px;
-
-  background-color: #ffffff;
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.mobile-menu.is-open {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: all;
-}
-
-.mobile-menu__btn {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  background-color: transparent;
-  cursor: pointer;
-  padding: 0;
-  line-height: 0;
-  border: none;
-}
-.mobile-menu__close-icon {
+.header__burger-icon {
   width: 40px;
   height: 40px;
 }
