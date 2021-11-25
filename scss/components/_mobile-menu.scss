@@ -5,7 +5,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 48px 0 48px 40px;
+  padding: 48px 0 48px 25px;
 
   background-color: #ffffff;
   opacity: 0;
@@ -89,7 +89,12 @@
 
 .mobile-menu__phone {
   text-decoration: none;
-  color: var(--accent-text-color);
+  color: #757575;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-text-color);
+  }
 }
 
 .mobile-menu__contact-mail {
@@ -101,6 +106,11 @@
   font-size: 24px;
   line-height: 1.16;
   color: #757575;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-text-color);
+  }
 }
 
 .mobile-menu__social {
