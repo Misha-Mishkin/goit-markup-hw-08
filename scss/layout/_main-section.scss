@@ -79,12 +79,6 @@
 }
 
 .main__title {
-  @media screen and (max-width: 767px) {
-    width: 360px;
-    font-size: 26px;
-    line-height: 1.62;
-  }
-
   margin-bottom: 30px;
   width: 696px;
 
@@ -94,6 +88,12 @@
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
+
+  @media screen and (max-width: 767px) {
+    width: 360px;
+    font-size: 26px;
+    line-height: 1.62;
+  }
 }
 
 .main__button {
