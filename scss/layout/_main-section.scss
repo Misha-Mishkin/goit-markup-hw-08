@@ -1,6 +1,6 @@
 .main {
   text-align: center;
-  padding: 118px 0px;
+  padding-top: 118px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -53,7 +53,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    padding: 200px;
+    padding-top: 200px;
 
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
@@ -79,6 +79,13 @@
 }
 
 .main__title {
+  @media screen and (max-width: 1199px) {
+    width: 360px;
+    font-size: 26px;
+    line-height: 1.62;
+  }
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 30px;
   width: 696px;
 
@@ -89,12 +96,6 @@
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-align: center;
-
-  @media screen and (max-width: 767px) {
-    width: 360px;
-    font-size: 26px;
-    line-height: 1.62;
-  }
 }
 
 .main__button {
