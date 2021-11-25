@@ -250,6 +250,19 @@ img {
 @media screen and (min-width: 768px) {
   .nav-contacts {
     display: flex;
+    flex-direction: column;
+    list-style: none;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.17;
+  }
+}
+
+@media screen and (min-width: 1200) {
+  .nav-contacts {
+    display: flex;
+    flex-direction: row;
     list-style: none;
     letter-spacing: 0.02em;
     font-weight: 500;
@@ -267,7 +280,6 @@ img {
 }
 
 .nav-contacts__contact {
-  display: flex;
   color: var(--secondary-text-color);
   text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -569,7 +581,7 @@ img {
 
 .mobile-menu__phone {
   text-decoration: none;
-  color: #757575;
+  color: var(--secondary-text-color);
 }
 
 .mobile-menu__phone:hover, .mobile-menu__phone:focus {
@@ -584,7 +596,7 @@ img {
   text-decoration: none;
   font-size: 24px;
   line-height: 1.16;
-  color: #757575;
+  color: var(--secondary-text-color);
 }
 
 .mobile-menu__mail:hover, .mobile-menu__mail:focus {
