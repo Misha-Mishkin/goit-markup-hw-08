@@ -9,7 +9,10 @@
 .header__section {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+
+  @media screen and (max-width: 767px) {
+    justify-content: space-between;
+  }
 }
 
 .header__nav {
