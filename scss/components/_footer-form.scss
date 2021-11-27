@@ -1,17 +1,22 @@
 .footer-form {
-  width: 570px;
+  width: 100%;
   display: flex;
-  align-items: end;
 
   @media screen and (max-width: 1199px) {
     width: 100%;
     align-items: center;
     flex-direction: column;
   }
+
+  @media screen and (min-width: 1200px) {
+    align-items: flex-end;
+  }
 }
 
 .footer__label {
-  width: 100%;
+  @media screen and (max-width: 1199px) {
+    width: 100%;
+  }
 }
 
 .footer-form_left {
