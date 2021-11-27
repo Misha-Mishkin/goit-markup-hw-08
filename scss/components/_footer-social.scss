@@ -1,5 +1,10 @@
 .footer-social_left {
-  margin-left: 70px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+  }
 }
 
 .footer-social__title {
@@ -11,18 +16,25 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
+
 .footer-social__list {
-  list-style: none;
   display: flex;
 }
-.footer-social__list .footer-social__item + .footer-social__item {
-  margin-left: 10px;
-}
+
 .footer-social__item {
   width: 44px;
   height: 44px;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
+
 .footer-social__link {
   width: 100%;
   height: 100%;
