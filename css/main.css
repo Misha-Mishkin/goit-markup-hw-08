@@ -1288,12 +1288,20 @@ img {
   .portfolio__buttons {
     flex-wrap: wrap;
     margin-top: -15px;
+    margin-bottom: 40px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .portfolio__buttons {
     justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio__buttons {
+    margin-bottom: 50px;
   }
 }
 
