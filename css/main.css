@@ -288,7 +288,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .nav-contacts__item:not(:last-child) {
-    margin-right: 30px;
+    margin-right: 50px;
   }
 }
 
@@ -321,15 +321,16 @@ img {
 }
 
 .nav-contacts__icon {
-  vertical-align: middle;
+  width: 100%;
+  height: 100%;
   display: flex;
-  margin-right: 10px;
+  margin-right: 8px;
   fill: currentColor;
 }
 
 @media screen and (max-width: 1199px) {
   .nav-contacts__icon {
-    margin-right: 8px;
+    margin-right: 10px;
   }
 }
 
