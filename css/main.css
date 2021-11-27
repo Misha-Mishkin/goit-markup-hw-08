@@ -166,7 +166,7 @@ img {
 }
 
 .footer-social__item:not(:last-child) {
-  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .footer-social__link {
