@@ -138,9 +138,6 @@
   letter-spacing: 0.03em;
   color: #757575;
 
-  @media screen and (max-width: 480px) {
-  }
-
   @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.71px;
@@ -174,8 +171,14 @@
   }
 }
 
+.modal-form__checkbox_text {
+  text-decoration: none;
+  color: var(--secondary-text-color);
+}
+
 .policy-link {
   color: var(--accent-text-color);
+  text-decoration: underline;
 }
 
 .modal-form__btn {
