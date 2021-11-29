@@ -1,5 +1,5 @@
 .clients__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: var(--primery-text-color);
   font-weight: 700;
   font-size: 28px;
@@ -9,6 +9,7 @@
   @media screen and (min-width: 1200px) {
     font-size: 36px;
     line-height: 1.16;
+    margin-bottom: 50px;
   }
 }
 
